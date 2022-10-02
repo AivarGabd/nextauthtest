@@ -3,6 +3,7 @@ import GoogleProvider from "next-auth/providers/google"
 
 export const authOptions: NextAuthOptions = {
 
+  
   providers: [
 
     GoogleProvider({
@@ -21,6 +22,7 @@ export const authOptions: NextAuthOptions = {
       return token
     },
   },
+
 }
 
 export default NextAuth(authOptions)
