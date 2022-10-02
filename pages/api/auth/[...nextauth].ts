@@ -11,6 +11,7 @@ export const authOptions: NextAuthOptions = {
     }),
     
   ],
+  secret: 'IamVeryHandsome' ,
   theme: {
     colorScheme: "light",
   },

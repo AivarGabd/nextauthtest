@@ -8,6 +8,7 @@ export default function Page() {
 useEffect(()=>{
   setTimeout(()=>{
     console.log(process.env.NEXT_PUBLIC_TEST)
+    console.log(process.env.NEXTAUTH_SECRET)
   },500)
 })
 
