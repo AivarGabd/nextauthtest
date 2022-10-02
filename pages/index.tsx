@@ -1,14 +1,20 @@
 import { useSession } from 'next-auth/react'
+import { useEffect } from 'react'
 import Layout from '../components/layout'
 
-export default function Page () {
+export default function Page() {
   const { data: session, status } = useSession<any>()
-
+  
+useEffect(()=>{
+  setTimeout(()=>{
+    console.log(process.env.TEST)
+  },500)
+})
 
   return (
     <Layout>
-      {session?<h1>{session.user?.name}</h1>:null}
-   
+      <h1>{process.env.TEST}</h1>
+
     </Layout>
   )
 }
