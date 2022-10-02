@@ -7,13 +7,13 @@ export default function Page() {
   
 useEffect(()=>{
   setTimeout(()=>{
-    console.log(process.env.TEST)
+    console.log(process.env.NEXT_PUBLIC_TEST)
   },500)
 })
 
   return (
     <Layout>
-      <h1>{process.env.TEST}</h1>
+      <h1>{process.env.NEXT_PUBLIC_TEST}</h1>
 
     </Layout>
   )
