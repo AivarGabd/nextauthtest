@@ -5,14 +5,13 @@ export const authOptions: NextAuthOptions = {
 
   
   providers: [
-
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,
     }),
     
   ],
-  secret: 'IamVeryHandsome' ,
+  secret: process.env.NEXTAUTH_SECRET ,
   theme: {
     colorScheme: "light",
   },
