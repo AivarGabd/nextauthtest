@@ -8,10 +8,7 @@ export default function Page () {
   return (
     <Layout>
       {session?<h1>{session.user?.name}</h1>:null}
-      
-      <p>
-        This is an example site to demonstrate how to use <a href={`https://next-auth.js.org`}>NextAuth.js</a> for authentication.
-      </p>
+   
     </Layout>
   )
 }
